@@ -1,39 +1,22 @@
 
 function Bike() {   
-    this._quarters = []
+    this._currentLocation = []
 }
 
 Bike.prototype = {
-     addQuarter: function (quarter){
-        this._quarters.push(quarter)
+     bikesCurrentLocation: function (quarter){
+        this._currentLocation.push(quarter)
 
      return
     },
     getCurrentLocation: function(){
-        return this._quarters
+        return this._currentLocation
+    },
+
+    cycle: function(){
+
     }
 
-
 }
 
 
-
-
-
-
-/*
-function Route () {
-  this._stations = []
-}
-
-Route.prototype = {
-  addStation: function (station) {
-    this._stations.push(station)
-
-    return
-  },
-  getStations: function () {
-    return this._stations
-  }
-
-}*/
